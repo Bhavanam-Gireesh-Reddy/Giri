@@ -10,7 +10,7 @@ from ratelimit import limits, sleep_and_retry
 from google.cloud import translate_v2 as translate
 
 # Configure Gemini API
-os.environ["API_KEY"] = "AIzaSyC36Q_f62Y5cUTZrRk7jO0lJvg-MIrFEVA"  # Replace with your actual API key
+os.environ["API_KEY"] = ""  # Replace with your actual API key
 genai.configure(api_key=os.environ["API_KEY"])
 model = genai.GenerativeModel('gemini-pro')
 
